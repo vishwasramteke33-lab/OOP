@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+namespace MyNamespace
+{
+    int num = 100;
+
+    void display()
+    {
+        cout << "This is a namespace example." << endl;
+        cout << "Number = " << num << endl;
+    }
+}
+
+int main()
+{
+    MyNamespace::display();
+
+    cout << "Accessing variable: " << MyNamespace::num;
+
+    return 0;
+}
